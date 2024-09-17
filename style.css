@@ -1,0 +1,115 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+.hero{
+  background:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRJ2TLQ_Qgx3uqOA6E5ELCi5c1UMNm2rrcEA&usqp=CAU) no-repeat ;
+  background-size:cover;
+  background-position:center bottom;
+  background-attachment:fixed;
+  width: 100vw;
+  height: 30vh;
+  opacity:0.7;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+.h1{
+  color:rgba(255,255,255,0.5);
+  font-size:min(8vw,5rem);
+  text-align:center;
+  font-family:Montserrat;
+  animation:H1 1s linear 1;
+  font-weight:700;
+}
+@keyframes H1{
+  from{
+    transform:translateX(-55vw)
+  }
+  to{
+    transform:translateX(0vw)
+  }
+}
+.p1{
+  color: #55;
+  font-family:lato;
+  font-weight:bolder;
+  font-size:min(4vw,2.5rem);
+  animation:P1 1.5s ease-out 1 ;
+}
+@keyframes P1{
+  from{
+    transform:scale(0.01)
+  }
+  to{
+    transform:scale(1)
+  }
+}
+.h1:hover{
+  color:teal;
+}
+.p1:hover{
+  color:lightyellow;
+}
+.a{
+  color:lightgray;
+  font-family:open sans;
+  font-weight:600;
+  font-size:min(4vw,2.5rem);
+  text-decoration: none;
+  width: 100vw;
+}
+.btn{
+  width:100vw;
+  background-color:#50c878;
+  border:2px solid gold;
+  text-align: center;
+}
+a.a:active{
+  color:gold;
+}
+.head2{
+  font-size:min(8vw,5rem);
+  font-family:raleway;
+  text-align:center;
+  color:maroon;
+  opacity:0.5;
+}
+.p2{
+  font-family:nunito;
+  font-weight:bold;
+  color:lightgray;
+  font-size:min(4vw,2.5rem);
+}
+.Sec1{
+  width:100vw;
+  height:40vh;
+  border: 2px solid gray;
+  background:url("https://images.unsplash.com/photo-1620435363451-b84b06e6de72?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bmF0dXJlJTIwaW1hZ2VzfGVufDB8fDB8fHww") no-repeat;
+  background-position:center;
+  background-attachment:fixed;
+  background-size:cover;
+  z-index:100;
+  display:none;
+  animation:up2 ease-in 1s 1;
+}
+#Sec1:target{
+  display:block;
+}
+@keyframes up2{
+  from{
+    transform:translateY(100vh)
+  }
+  to{
+    transform:translateY(0vh)
+
+  }
+}
+@keyframes down2 {
+  from {
+    transform: translateY(-100vh)
+  }
+
+  to {
+    transform: translateY(0vh)
+  }
+}
